@@ -1,0 +1,54 @@
+The primary goal of security in information technology is to protect the confidentiality, integrity, and availability of data and systems. This is often referred to as the CIA triad. Additionally, authentication and non-repudiation are crucial components of a comprehensive security strategy.
+
+The CIA Triad
+
+The CIA triad is a widely accepted model that serves as the foundation for information security policies. It consists of three core principles:
+
+1. Confidentiality
+  Definition: Ensuring that information is only accessible to those with authorized access.
+  Importance: Protects sensitive data from unauthorized access and disclosure.
+  Methods:
+  Encryption: Converting data into a coded format that can only be read by those with the decryption key.
+  Access Controls: Implementing policies and procedures to restrict access to sensitive information.
+  Authentication: Verifying the identity of users before granting access to information.
+2. Integrity
+  Definition: Ensuring that information remains accurate, complete, and unaltered during storage, transmission, and processing.
+  Importance: Maintains the trustworthiness and reliability of data.
+  Methods:
+  Hash Functions: Creating a unique digital fingerprint of data to detect any changes.
+  Checksums: Adding a calculated value to data to verify its integrity upon retrieval.
+  Digital Signatures: Using cryptographic techniques to verify the authenticity and integrity of data.
+3. Availability
+  Definition: Ensuring that information and resources are available to authorized users when needed.
+  Importance: Supports the continuity of business operations and services.
+  Methods:
+  Redundancy: Implementing backup systems and failover mechanisms to ensure continuous availability.
+  Disaster Recovery Plans: Preparing for and mitigating the impact of disruptions to operations.
+  Maintenance: Regularly updating and maintaining systems to prevent outages and failures.
+
+Additional Security Goals
+
+4. Authentication
+  Definition: Verifying the identity of users, devices, or systems to ensure they are who they claim to be.
+  Importance: Prevents unauthorized access and ensures that only legitimate users can access resources.
+  Methods:
+  Passwords: Using secret codes known only to the user.
+  Biometric Verification: Using unique physical characteristics such as fingerprints or facial recognition.
+  Multi-Factor Authentication (MFA): Combining two or more verification methods to enhance security.
+5. Non-Repudiation
+  Definition: Ensuring that a party cannot deny the authenticity of their signature on a document or a message that they sent.
+  Importance: Provides proof of the origin and integrity of data, preventing denial of actions.
+  Methods:
+  Digital Signatures: Using cryptographic methods to bind a signature to a document.
+  Audit Logs: Recording actions and transactions to provide a trail of evidence.
+
+Conclusion
+
+The goals of security are fundamental to protecting information and systems in the digital age. By focusing on confidentiality, integrity, availability, authentication, and non-repudiation, organizations can build a robust security framework that mitigates risks and ensures the trustworthiness of their data and operations.
+
+References
+
+Bishop, M. (2003). Computer Security: Art and Science. Addison-Wesley.
+Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
+National Institute of Standards and Technology (NIST). (2018). An Introduction to Information Security. Retrieved from https://csrc.nist.gov/publications/detail/sp/800-12/rev-1/final
+International Organization for Standardization (ISO). (2013). ISO/IEC 27001: Information Security Management. Retrieved from https://www.iso.org/isoiec-27001-information-security.html
