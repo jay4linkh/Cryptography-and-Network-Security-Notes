@@ -19,6 +19,7 @@ The lecture notes are structured to cover the following topics:
 
 2. **Symmetric Key Encryption**
     - Data Encryption Standard (DES)
+        - Introduction
         - Structure, Key Generation, Encryption and Decryption
         - 2-DES, Triple DES
         - Confusion and Diffusion, Avalanche Attack
