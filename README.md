@@ -22,41 +22,7 @@ The lecture notes are structured to cover the following topics:
         - Structure, Key Generation, Encryption and Decryption
         - 2-DES, Triple DES
         - Confusion and Diffusion, Avalanche Attack
-    - Advanced Encryption Standard (AES)
-        - Algebraic Structures, GF(2^8) Fields
-        - AES Structure, Round Functions, Key Expansion
-        - Encryption and Decryption, AES Security: Avalanche Attack, Confusion, and Diffusion
-        - Key Management: Kerberos
-
-3. **Asymmetric Key Encryption**
-    - Number Theory and Modular Arithmetic
-        - Primality Testing, Fermat's and Euler's Theorems
-        - Order of a Number, Primitive Roots
-        - Euclidean and Extended Euclidean Algorithm
-    - Principles of Public Key Cryptosystems
-    - RSA Algorithm
-    - Diffie-Hellman Key Exchange
-
-4. **Message Integrity and Message Authentication**
-    - Message Authentication Codes (MAC)
-    - Hash Functions
-    - SHA-512
-    - Digital Signatures
-
-5. **Network Security**
-    - Need for Security of Computer Networks
-    - Transport Layer Security: Secure Socket Layer (SSL)
-    - IP Security: Transport and Tunnel Modes
-    - E-mail Security: PGP and S/MIME
-
-6. **System Security**
-    - Users, Trust, and Trusted Systems
-    - Buffer Overflow and Malicious Software
-    - Worms, Viruses, Denial of Service Attacks
-    - Firewalls: Construction and Working Principles
-    - Intrusion Detection Systems
-    - Introduction to SIEM (Security Information and Event Management) Technology
-
+  
 ## License
 
 This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/).
