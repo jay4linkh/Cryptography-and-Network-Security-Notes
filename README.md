@@ -14,7 +14,7 @@ The lecture notes are structured to cover the following topics:
     - [Need for Data Encryption](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Need%20for%20Data%20Encryption)
     - [Goal of Security: Confidentiality, Integrity, Authentication](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Goal%20of%20Security%3A%20Confidentiality%2C%20Integrity%2C%20Authentication)
     - [Security Attacks: Active, Passive, Cryptanalytic, and Non-cryptanalytic](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/commit/b38b91dbe06b2d9839bd6a7504293ec1ff913de1)
-    - Substitution Ciphers
+    - [Substitution Ciphers] (https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Substitution%20Ciphers)
     - Transposition Ciphers
     - Symmetric and Asymmetric Encryption
 
