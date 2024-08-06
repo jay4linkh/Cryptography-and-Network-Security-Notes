@@ -1,0 +1,107 @@
+Encryption is the process of converting plaintext into ciphertext to prevent unauthorized access. There are two primary types of encryption: Symmetric and Asymmetric. Both methods use algorithms and keys but differ in how they handle encryption and decryption processes.
+
+Symmetric Encryption
+
+Definition
+  Symmetric encryption uses the same key for both encryption and decryption. The key must be kept secret between the communicating parties to ensure the confidentiality of the data.
+
+Key Characteristics
+  Single Key: Both encryption and decryption use the same key.
+  Speed: Generally faster than asymmetric encryption due to simpler algorithms.
+  Key Distribution Problem: Securely sharing the key between parties can be challenging.
+
+Common Symmetric Encryption Algorithms
+1. Data Encryption Standard (DES)
+
+  Key Length: 56 bits
+  Block Size: 64 bits
+  Rounds: 16
+  Description: DES is an older symmetric-key block cipher that encrypts data in 64-bit blocks using a 56-bit key. It has been largely replaced by more secure algorithms like AES.
+
+2. Advanced Encryption Standard (AES)
+
+  Key Lengths: 128, 192, or 256 bits
+  Block Size: 128 bits
+  Rounds: 10, 12, or 14 (depending on key length)
+  Description: AES is a widely used symmetric encryption algorithm that is considered secure and efficient. It encrypts data in 128-bit blocks and supports multiple key lengths.
+
+3. Triple DES (3DES)
+
+  Key Length: 168 bits (3 x 56-bit keys)
+  Block Size: 64 bits
+  Rounds: 48 (3 passes with 16 rounds each)
+  Description: 3DES applies DES encryption three times with different keys. It improves security over DES but is slower and less efficient compared to AES.
+
+Advantages
+  Efficiency: Symmetric encryption is generally faster and requires less computational power.
+  Simplicity: The encryption and decryption processes are straightforward.
+Disadvantages
+  Key Management: Securely managing and distributing the key is complex.
+  Scalability: Not ideal for scenarios involving many parties due to the need for a unique key for each pair.
+
+Asymmetric Encryption
+
+Definition
+  Asymmetric encryption uses a pair of keys: a public key and a private key. The public key encrypts data, while the private key decrypts it. Only the private key can decrypt data encrypted with the corresponding public key.
+
+Key Characteristics
+  Key Pair: Utilizes two keys: public and private.
+  Security: More secure in terms of key management as the private key is kept secret.
+  Performance: Generally slower than symmetric encryption due to more complex algorithms.
+
+Common Asymmetric Encryption Algorithms
+1. RSA (Rivest-Shamir-Adleman)
+
+  Key Lengths: 1024, 2048, or 4096 bits
+  Algorithm: Based on the difficulty of factoring large prime numbers.
+  Description: RSA is widely used for secure data transmission and digital signatures. It provides both encryption and digital signatures.
+
+2. ECC (Elliptic Curve Cryptography)
+
+  Key Lengths: Typically 256 bits (equivalent security to much longer keys in RSA)
+  Algorithm: Based on the algebraic structure of elliptic curves over finite fields.
+  Description: ECC offers strong security with shorter keys, making it efficient in terms of computation and bandwidth.
+
+3. ElGamal
+
+  Key Lengths: Typically 1024 or 2048 bits
+  Algorithm: Based on the difficulty of computing discrete logarithms.
+  Description: Used for encryption and digital signatures, ElGamal is an asymmetric algorithm with a focus on secure key exchange.
+
+Advantages
+  Key Management: Simplifies key management as only the public key needs to be shared openly.
+  Digital Signatures: Supports digital signatures, ensuring both authenticity and integrity of messages.
+
+Disadvantages
+  Performance: Slower compared to symmetric encryption due to complex mathematical operations.
+  Complexity: More complex to implement and manage compared to symmetric algorithms.
+
+Hybrid Encryption Systems
+
+Definition
+  Hybrid encryption systems combine symmetric and asymmetric encryption to leverage the advantages of both methods.
+
+How It Works
+  Key Exchange: Asymmetric encryption is used to securely exchange a symmetric key.
+  Data Encryption: The symmetric key is then used to encrypt the actual data due to its efficiency.
+Example
+  PGP (Pretty Good Privacy): Uses RSA for key exchange and symmetric encryption algorithms (like AES) for encrypting the message.
+
+Use Cases
+
+Symmetric Encryption
+  Data at Rest: Encrypting files or databases where high performance is required.
+  Internal Communication: Securely encrypting internal communications within an organization.
+Asymmetric Encryption
+  Secure Key Exchange: Exchanging symmetric keys securely over an insecure channel.
+  Digital Signatures: Verifying the authenticity of documents or transactions.
+
+Conclusion
+
+Symmetric and asymmetric encryption are fundamental to modern cryptographic systems. Symmetric encryption is efficient and fast, ideal for bulk data encryption, while asymmetric encryption provides robust security for key exchange and digital signatures. Often, hybrid systems are used to balance performance and security.
+
+References
+
+Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
+Menezes, A., van Oorschot, P., & Vanstone, S. (1996). Handbook of Applied Cryptography. CRC Press.
+Kaufman, C., Perlman, R., & Speciner, M. (2002). Network Security: Private Communication in a Public World. Prentice Hall.
