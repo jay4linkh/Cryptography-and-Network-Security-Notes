@@ -61,14 +61,14 @@ The lecture notes are structured to cover the following topics:
     - Intrusion Detection Systems
     - Introduction to SIEM (Security Information and Event Management) Technology
 
+## License
+
+This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/).
+
 ## How to Use
 
 1. **Lecture Notes:** Detailed notes for each lecture are available in the `lectures` directory. Each note includes theoretical concepts, examples, diagrams, and references to help you understand the material thoroughly.
 
 ## Contribution
 
-Contributions are welcome! If you find any errors or have suggestions for improvements, please submit an issue or a pull request.
-
-## License
-
-This work is licensed under a Creative Commons Attribution 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/).
+This repository is read-only. If you have suggestions or feedback, please open an issue to discuss them.
