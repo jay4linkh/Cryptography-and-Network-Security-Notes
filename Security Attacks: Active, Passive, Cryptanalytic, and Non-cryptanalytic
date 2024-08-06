@@ -1,0 +1,100 @@
+Security attacks are deliberate actions aimed at compromising the confidentiality, integrity, or availability of information and systems. Understanding different types of attacks helps in designing effective defenses and mitigating risks.
+
+Types of Security Attacks
+
+1. Active Attacks
+  Active attacks involve direct manipulation or alteration of data or systems. The attacker actively interferes with the communication or data, aiming to disrupt or modify it.
+
+Characteristics
+
+  Intentional Modification: The attacker changes or corrupts the data.
+  Disruption: The attacker causes disruption or denial of service.
+  Detection: Typically more noticeable and easier to detect compared to passive attacks.
+
+Examples
+
+  Man-in-the-Middle (MitM) Attack: The attacker intercepts and possibly alters communications between two parties.
+  Denial of Service (DoS) Attack: The attacker floods a network or system with excessive requests to overwhelm and disable it.
+  Replay Attack: The attacker captures and retransmits valid data to deceive the recipient or cause unauthorized actions.
+  Session Hijacking: The attacker takes over an active session between a user and a server, gaining unauthorized access.
+
+Mitigations
+
+  Encryption: Protects data in transit from unauthorized modifications.
+  Authentication: Verifies the identity of parties to prevent unauthorized access.
+  Firewalls and Intrusion Detection Systems (IDS): Monitor and block suspicious activities.
+
+2. Passive Attacks
+  Passive attacks involve eavesdropping or monitoring data without altering it. The attacker gathers information without disrupting the communication or data flow.
+
+Characteristics
+
+  Non-intrusive: The attacker does not interfere with or alter the data.
+  Stealthy: More difficult to detect as it does not generate noticeable changes in the system.
+  Focus on Observation: The primary goal is to gather information rather than to disrupt.
+
+Examples
+
+  Eavesdropping: The attacker listens to or captures network traffic to gather sensitive information.
+  Traffic Analysis: The attacker analyzes patterns and metadata of network traffic to infer information about the communication.
+  Sniffing: The attacker uses software to capture and analyze network packets.
+
+Mitigations
+
+  Encryption: Secures data during transmission to prevent unauthorized access.
+  Secure Communication Channels: Use of protocols such as HTTPS and VPNs.
+  Network Monitoring: Regular monitoring to detect unusual patterns or signs of eavesdropping.
+
+3. Cryptanalytic Attacks
+Cryptanalytic attacks target the cryptographic algorithms and protocols themselves, aiming to break the encryption and access the plaintext data.
+
+Characteristics
+
+  Algorithm-Based: Focuses on finding weaknesses in cryptographic algorithms or implementations.
+  Mathematical Techniques: Often involves sophisticated mathematical and statistical methods.
+  Goal: To uncover encryption keys or decipher encrypted data without proper authorization.
+
+Examples
+
+  Brute Force Attack: The attacker tries all possible key combinations to decrypt the data.
+  Ciphertext-only Attack: The attacker has only the encrypted data and tries to derive the plaintext or key.
+  Known-plaintext Attack: The attacker has access to both the plaintext and its corresponding ciphertext and uses this information to deduce the key.
+  Chosen-plaintext Attack: The attacker can choose plaintexts and obtain their corresponding ciphertexts to analyze the encryption scheme.
+
+Mitigations
+
+  Strong Encryption Algorithms: Use algorithms with proven security and resistance to cryptanalysis.
+  Key Management: Regularly update and securely manage cryptographic keys.
+  Adopting Latest Standards: Follow the latest cryptographic standards and best practices.
+
+4. Non-cryptanalytic Attacks
+Non-cryptanalytic attacks target vulnerabilities in the implementation or usage of cryptographic systems rather than the cryptographic algorithms themselves.
+
+Characteristics
+
+  Implementation-Based: Exploits flaws or weaknesses in the way cryptographic algorithms are implemented or used.
+  System-Level Vulnerabilities: Focuses on weaknesses in the system environment rather than the cryptographic algorithms.
+  Exploit Configuration Issues: Targets misconfigurations or poor practices related to cryptography.
+
+Examples
+
+  Side-Channel Attacks: Exploit physical or observable properties of the cryptographic system, such as timing information or power consumption.
+  Padding Oracle Attack: Exploits weaknesses in the handling of padded data in cryptographic systems.
+  Implementation Bugs: Exploits errors or vulnerabilities in the software or hardware implementing the cryptographic algorithms.
+
+Mitigations
+
+  Secure Coding Practices: Follow best practices in software development to avoid common implementation flaws.
+  Regular Updates and Patching: Keep cryptographic systems and libraries up-to-date to address known vulnerabilities.
+  Thorough Testing: Perform extensive testing and validation of cryptographic implementations.
+
+Conclusion
+
+  Understanding the different types of security attacks—active, passive, cryptanalytic, and non-cryptanalytic—helps in building comprehensive security strategies. Each type of attack has its own methods and impacts, and addressing them requires targeted defenses and proactive measures.
+
+References
+
+  Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
+  Menezes, A., van Oorschot, P., & Vanstone, S. (1996). Handbook of Applied Cryptography. CRC Press.
+  Kaufman, C., Perlman, R., & Speciner, M. (2002). Network Security: Private Communication in a Public World. Prentice Hall.
+  National Institute of Standards and Technology (NIST). (2020). Computer Security Resource Center (CSRC). Retrieved from https://csrc.nist.gov/
