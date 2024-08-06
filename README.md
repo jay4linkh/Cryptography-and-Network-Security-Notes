@@ -2,10 +2,6 @@
 
 Welcome to the Cryptography and Network Security Notes repository. This repository contains comprehensive lecture notes for the "Cryptography and Network Security" course designed for MBA Tech AI Semester 5 students.
 
-## Contents
-
-- [Lecture Notes](./lectures)
-
 ## Description
 
 This repository is dedicated to providing detailed and well-organized lecture notes for the "Cryptography and Network Security" course. Each lecture note is designed to help students understand fundamental concepts, algorithms, protocols, and practical implementations essential for securing digital information.
