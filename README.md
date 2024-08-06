@@ -1,6 +1,6 @@
 # Cryptography and Network Security Notes
 
-Welcome to the Cryptography and Network Security Notes repository. This repository contains comprehensive lecture notes for the "Cryptography and Network Security".
+This repository contains comprehensive lecture notes for the Cryptography and Network Security.
 ## Description
 
 This repository is dedicated to providing detailed and well-organized lecture notes for the "Cryptography and Network Security" course. Each lecture note is designed to help students understand fundamental concepts, algorithms, protocols, and practical implementations essential for securing digital information.
