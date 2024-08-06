@@ -29,7 +29,7 @@ This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 Internat
 
 ## How to Use
 
-1. **Lecture Notes:** Detailed notes for each lecture are available in the `lectures` directory. Each note includes theoretical concepts, examples, diagrams, and references to help you understand the material thoroughly.
+1. **Lecture Notes:** Each note includes theoretical concepts, examples and references to help you understand the material thoroughly.
 
 ## Contribution
 
