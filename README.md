@@ -16,7 +16,7 @@ The lecture notes are structured to cover the following topics:
     - [Security Attacks: Active, Passive, Cryptanalytic, and Non-cryptanalytic](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/commit/b38b91dbe06b2d9839bd6a7504293ec1ff913de1)
     - [Substitution Ciphers](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Substitution%20Ciphers)
     - [Transposition Ciphers](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Transposition%20Ciphers)
-    - Symmetric and Asymmetric Encryption
+    - [Symmetric and Asymmetric Encryption](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Symmetric%20and%20Asymmetric%20Encryptions)
 
 2. **Symmetric Key Encryption**
     - Data Encryption Standard (DES)
