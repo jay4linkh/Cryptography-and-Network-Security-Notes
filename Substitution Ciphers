@@ -1,0 +1,167 @@
+A substitution cipher is a type of encryption where each letter in the plaintext is replaced by another letter according to a fixed system. This is one of the simplest and oldest forms of encryption used to obscure information.
+
+Types of Substitution Ciphers
+
+1. Caesar Cipher
+The Caesar cipher is a type of monoalphabetic substitution cipher where each letter in the plaintext is shifted a fixed number of places down or up the alphabet.
+
+Example
+
+Let's use a Caesar cipher with a shift of 3 positions.
+
+Key: Shift each letter by 3 positions (A → D, B → E, C → F, etc.)
+Plaintext: HELLO
+
+Substitution Process:
+
+H → K
+E → H
+L → O
+L → O
+O → R
+Ciphertext: KHOOR
+
+2. Monoalphabetic Substitution Cipher
+In a monoalphabetic substitution cipher, each letter in the plaintext is replaced by a letter with a fixed relationship. The relationship does not change throughout the message.
+
+Example
+
+Let's use a simple substitution where each letter of the alphabet is shifted by 4 positions.
+
+Key: Shift each letter by 4 positions (A → E, B → F, C → G, etc.)
+Plaintext: MEET ME AT THE PARK
+
+Substitution Process:
+
+M → Q
+E → I
+E → I
+T → X
+(Space remains unchanged)
+M → Q
+E → I
+(Space remains unchanged)
+A → E
+T → X
+(Space remains unchanged)
+T → X
+H → L
+E → I
+(Space remains unchanged)
+P → T
+A → E
+R → V
+K → O
+Ciphertext: QIIX QI EX XLI TEVO
+
+3. Polyalphabetic Substitution Cipher
+In a polyalphabetic substitution cipher, the substitution rules change throughout the message. This is achieved by using multiple substitution alphabets.
+
+Example (Vigenère Cipher)
+
+The Vigenère cipher uses a keyword to determine the shifting for each letter in the plaintext.
+
+Keyword: KEY
+Plaintext: HELLO
+Keyword Repeated: KEYKE
+
+Substitution Process:
+
+Convert letters to their numerical positions (A=0, B=1, ..., Z=25).
+H (7), E (4), L (11), L (11), O (14)
+K (10), E (4), Y (24), K (10), E (4)
+Add the numerical positions of the plaintext and keyword letters, modulo 26:
+(7 + 10) % 26 = 17 → R
+(4 + 4) % 26 = 8 → I
+(11 + 24) % 26 = 9 → J
+(11 + 10) % 26 = 21 → V
+(14 + 4) % 26 = 18 → S
+Ciphertext: RIJVS
+
+Numerical Examples
+
+1. Caesar Cipher Example
+Key: Shift of 5 positions (A → F, B → G, etc.)
+
+Plaintext: HELLO WORLD
+
+Substitution Process:
+
+H → M
+E → J
+L → Q
+L → Q
+O → T
+(Space remains unchanged)
+W → B
+O → T
+R → W
+L → Q
+D → I
+Ciphertext: MJQQT BTWQI
+
+2. Monoalphabetic Cipher Example
+Key: Shift of 6 positions (A → G, B → H, etc.)
+
+Plaintext: MEET ME AT THE PARK
+
+Substitution Process:
+
+M → S
+E → K
+E → K
+T → Z
+(Space remains unchanged)
+M → S
+E → K
+(Space remains unchanged)
+A → G
+T → Z
+(Space remains unchanged)
+T → Z
+H → N
+E → K
+(Space remains unchanged)
+P → V
+A → G
+R → X
+K → Q
+Ciphertext: SKKZ SK GZ ZNK VGXQ
+
+3. Polyalphabetic Cipher Example
+Keyword: BOOK
+
+Plaintext: DATA
+
+Keyword Repeated: BOOK
+
+Substitution Process:
+
+Convert letters to their numerical positions (A=0, B=1, ..., Z=25).
+D (3), A (0), T (19), A (0)
+B (1), O (14), O (14), K (10)
+Add the numerical positions of the plaintext and keyword letters, modulo 26:
+(3 + 1) % 26 = 4 → E
+(0 + 14) % 26 = 14 → O
+(19 + 14) % 26 = 7 → H
+(0 + 10) % 26 = 10 → K
+Ciphertext: EOHK
+
+Advantages and Disadvantages
+
+Advantages
+  Simplicity: Easy to implement and understand.
+  Fast Encryption/Decryption: Computationally efficient due to the simple substitution.
+  Disadvantages
+  Vulnerability: Susceptible to frequency analysis and pattern recognition, especially in monoalphabetic ciphers.
+  Predictable Patterns: The fixed substitution can reveal patterns in the ciphertext.
+
+Conclusion
+
+Substitution ciphers, including Caesar and Vigenère ciphers, provide a basic understanding of cryptographic techniques. While they offer foundational knowledge, modern encryption methods have evolved to address their limitations.
+
+References
+
+Kaufman, C., Perlman, R., & Speciner, M. (2002). Network Security: Private Communication in a Public World. Prentice Hall.
+Stallings, W. (2017). Cryptography and Network Security: Principles and Practice. Pearson.
+Menezes, A., van Oorschot, P., & Vanstone, S. (1996). Handbook of Applied Cryptography. CRC Press.
