@@ -19,7 +19,7 @@ The lecture notes are structured to cover the following topics:
 
 2. **Symmetric Key Encryption**
     - Data Encryption Standard (DES)
-        - Structure, Key Generation, Encryption and Decryption
+        - [Structure, Key Generation, Encryption and Decryption](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/DES_Structure%2C%20Key%20Generation%2C%20Encryption%20and%20Decryption)
         - Tables for Initial, Final Permutations, Expansion P-box, Straight P-box, S-box
         - Example - Entire DES Numerical
         - S-Box Numerical
