@@ -11,7 +11,7 @@ This repository is dedicated to providing detailed and well-organized lecture no
 The lecture notes are structured to cover the following topics:
 
 1. **Introduction of Data Encryption**
-    - Need for Data Encryption
+    - [Need for Data Encryption](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Need%20for%20Data%20Encryption)
     - Goal of Security: Confidentiality, Integrity, Authentication
     - Security Attacks: Active, Passive, Cryptanalytic, and Non-cryptanalytic
     - Classical Techniques: Substitution Ciphers, Transposition Ciphers
