@@ -1,0 +1,52 @@
+Double DES (2DES) is an extension of the Data Encryption Standard (DES) designed to enhance its security. Instead of using a single DES encryption, 2DES applies the DES algorithm twice with two different keys.DES, with a key length of 56 bits, is vulnerable to brute-force attacks due to advances in computational power. 2DES increases the effective key length to 112 bits, providing stronger security against brute-force attacks.
+
+How 2DES Works
+
+Encrypt the plaintext using the first DES key (Key1):
+C1 =EKey1(Plaintext)
+
+Encrypt the output of the first encryption using the second DES key (Key2):
+Ciphertext=EKey2(C1)
+Ciphertext=EKey2(EKey1(Plaintext))
+
+Decryption Process
+
+The decryption process for 2DES is the reverse of the encryption process:
+
+Decrypt the ciphertext using the second DES key (Key2):
+C1=DKey2(Ciphertext)C1=D Key2​(Ciphertext)
+
+Decrypt the result using the first DES key (Key1):
+Plaintext=DKey1(C1)
+Plaintext=DKey1(DKey2(Ciphertext))
+
+Security Analysis
+
+While 2DES increases security compared to single DES, it is still vulnerable to certain types of attacks, such as the meet-in-the-middle attack. In this attack, the attacker tries to find two keys that produce the same intermediate ciphertext.
+
+Numerical Example
+
+Given:
+
+Plaintext: 0x0123456789ABCDEF
+Key 1: 0x133457799BBCDFF1
+Key 2: 0x1F1F1F1F0E0E0E0E
+Step 1: First DES Encryption (Using Key 1)
+
+Plaintext: 0x0123456789ABCDEF
+Key 1: 0x133457799BBCDFF1
+Ciphertext after first encryption (C1): Assume 0x85E813540F0AB405
+Step 2: Second DES Encryption (Using Key 2)
+
+Intermediate Ciphertext (C1): 0x85E813540F0AB405
+Key 2: 0x1F1F1F1F0E0E0E0E
+Final Ciphertext: Assume 0xDCDCDDCCABCD1234
+Practical Considerations
+
+Key Management: Managing and securely distributing two keys instead of one adds complexity.
+Performance: 2DES is slower than single DES due to the double encryption process.
+Security: Although more secure than single DES, 2DES is not widely used due to its vulnerability to meet-in-the-middle attacks. Triple DES (3DES) is preferred as it provides better security.
+Conclusion
+
+2DES is an improvement over single DES but is largely overshadowed by 3DES due to its vulnerability to meet-in-the-middle attacks. It serves as an important step in the evolution of cryptographic standards, highlighting the need for stronger encryption mechanisms.
+
