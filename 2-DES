@@ -46,7 +46,10 @@ Practical Considerations
 Key Management: Managing and securely distributing two keys instead of one adds complexity.
 Performance: 2DES is slower than single DES due to the double encryption process.
 Security: Although more secure than single DES, 2DES is not widely used due to its vulnerability to meet-in-the-middle attacks. Triple DES (3DES) is preferred as it provides better security.
-Conclusion
 
 2DES is an improvement over single DES but is largely overshadowed by 3DES due to its vulnerability to meet-in-the-middle attacks. It serves as an important step in the evolution of cryptographic standards, highlighting the need for stronger encryption mechanisms.
+
+References:
+William Stallings, "Cryptography and Network Security: Principles and Practice"
+Bruce Schneier, "Applied Cryptography: Protocols, Algorithms, and Source Code in C"
 
