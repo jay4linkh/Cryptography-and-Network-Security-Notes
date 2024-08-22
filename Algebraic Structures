@@ -1,0 +1,37 @@
+In AES (Advanced Encryption Standard), several algebraic structures are used to define and perform cryptographic operations. Understanding these structures is crucial for grasping how AES achieves its security properties. Here are the key algebraic structures involved:
+
+1. Finite Fields (Galois Fields)
+Finite fields, or Galois fields, are central to AES encryption. AES operates over GF(2^8), a finite field with 
+2^8=256 elements.
+
+1. Field GF(2^8): This field is constructed using polynomials with coefficients in GF(2) (the binary field {0,1}). The elements of GF(2^8) are represented as 8-bit bytes. 
+Operations in this field are carried out using modulo arithmetic with respect to an irreducible polynomial.
+
+Irreducible Polynomial: For AES, the field GF(2^8) is defined using the irreducible polynomial 
+x^8 + x^4 + x^3 + x + 1. This polynomial is used to reduce the results of polynomial multiplication to keep them within the 8-bit range.
+
+2. Polynomials
+Polynomials over GF(2): The operations in GF(2^8) often involve polynomials of degree less than 8. These polynomials are used in various steps of AES, including:
+  Key Expansion: Generating round keys from the original key.
+  MixColumns: Involves matrix multiplication where each column of the state matrix is treated as a polynomial.
+
+3. Matrix Algebra
+  Matrix Multiplication: AES uses matrix algebra for several operations:
+  MixColumns: Each column of the state matrix is multiplied by a fixed 4x4 matrix. This operation spreads the influence of each byte across the column and is essential for diffusion.
+
+4. S-Box and Inverse S-Box
+  S-Box (Substitution Box): The S-Box used in AES is a fixed 16x16 lookup table that performs a non-linear substitution. This can be viewed as a bijective function over GF(2^8).     Each byte of the state is substituted based on this table. Inverse S-Box: Used in the decryption process to reverse the S-Box substitution done during encryption.
+
+5. XOR (Exclusive OR) Operation
+  XOR Operation: AES uses the XOR operation for combining bytes. It’s a fundamental operation for:
+    AddRoundKey: XORing the state matrix with the round key.
+    Key Expansion: XORing the round constants and previous round keys.
+
+Summary of Algebraic Structures in AES:
+  Finite Fields (GF(2^8)): Define the arithmetic operations used in AES, with polynomials modulo an irreducible polynomial.
+  Polynomials: Used in key expansion and MixColumns.
+  Matrix Algebra: Applied in MixColumns for diffusion.
+  S-Box and Inverse S-Box: Used for substitution in encryption and decryption.
+  XOR Operation: Used for key addition and in some parts of key expansion.
+
+Each of these algebraic structures contributes to the strength and security of AES by ensuring that encryption and decryption operations are both efficient and resistant to cryptographic attacks.
