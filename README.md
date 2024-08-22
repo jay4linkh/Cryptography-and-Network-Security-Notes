@@ -27,7 +27,7 @@ The lecture notes are structured to cover the following topics:
         - [Triple DES](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Triple%20DES)
         - [Confusion and Diffusion](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/ConfusionDiffusion)
         - [Avalanche Attack](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Avalanche%20attack)
-      - Advanced Encryption Standard (AES)
+    - Advanced Encryption Standard (AES)
 ## License
 
 This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/).
