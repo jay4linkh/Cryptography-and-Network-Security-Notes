@@ -1,0 +1,66 @@
+
+S-Box 1 Table:
+
+Row\Col	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+0	      14	4	13	1	2	15	11	8	3	6	7	9	5	0	12	10
+1	      15	12	8	2	4	9	1	7	5	11	3	14	10	0	6	13
+2	      7	9	14	3	0	6	10	1	13	11	5	12	2	8	15	4
+3	      6	8	1	10	13	4	7	0	9	5	11	14	15	12	3	2
+
+Steps to Use S-Box 1
+
+Step 1: Input Selection
+
+Suppose we have a 6-bit input for the S-Box. The input will be split into two parts:
+
+The first and last bits determine the row.
+The middle four bits determine the column.
+For example, let’s use the 6-bit input: 101110.
+
+Row: Formed by the first and last bits (1 and 0), which gives us binary 10 (decimal 2).
+Column: Formed by the middle four bits (0111), which gives us binary 0111 (decimal 7).
+
+Step 2: Locate the Value in the S-Box Table
+
+Determine the Row and Column:
+Row index: 2
+Column index: 7
+Find the Value in the S-Box Table:
+In S-Box 1, at Row 2 and Column 7, the value is 1.
+
+Step 3: Substitute the Value
+
+The 6-bit input 101110 is substituted by the S-Box output value.
+
+Numerical Example
+Let's use a complete step-by-step numerical example for S-Box substitution.
+
+1. Input Data:
+
+6-bit input: 110101
+
+2. Determine Row and Column:
+
+Row: First and last bits of input (1 and 1), which gives us binary 11 (decimal 3).
+Column: Middle four bits of input (1010), which gives us binary 1010 (decimal 10).
+
+3. Lookup in S-Box Table:
+
+For S-Box 1, Row 3 and Column 10:
+S-Box 1 value at (Row 3, Column 10) is 11 in binary, which is 3 in decimal.
+
+4. Result of Substitution:
+
+The output from the S-Box for input 110101 is 0011 (binary) or 3 (decimal).
+
+Extract Row and Column:
+Row from the first and last bits of the 6-bit input.
+Column from the middle four bits of the 6-bit input.
+
+Substitute:
+Find the corresponding value in the S-Box table based on the extracted row and column.
+
+Output:
+The value found in the S-Box table is the substituted output.
+
+Using the S-Box in DES involves converting a 6-bit input into a row and column index, finding the corresponding value in the S-Box table, and using that value as the substituted output. This non-linear substitution process introduces confusion into the encryption algorithm, enhancing its security.
