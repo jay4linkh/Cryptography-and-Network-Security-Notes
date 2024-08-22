@@ -1,1 +1,76 @@
+1. Introduction to AES:
 
+AES (Advanced Encryption Standard) is a symmetric key encryption algorithm used to secure data.
+It was adopted by the U.S. government in 2001 and is widely used across various applications.
+AES operates on a block size of 128 bits and supports key sizes of 128, 192, and 256 bits.
+
+2. Key Components of AES:
+
+Plaintext: The original message or data to be encrypted.
+Ciphertext: The encrypted output after applying the AES algorithm.
+Key: A sequence of bits used to perform both encryption and decryption. The key size can be 128, 192, or 256 bits.
+
+3. Structure of AES:
+AES encryption involves multiple rounds, and the number of rounds depends on the key size:
+
+10 rounds for a 128-bit key.
+12 rounds for a 192-bit key.
+14 rounds for a 256-bit key.
+
+Each round consists of several specific steps, except the final round, which omits one step (MixColumns).
+
+4. AES Rounds Overview:
+4.1 Initial Round:
+
+  AddRoundKey: XOR the state with the first round key.
+
+4.2 Main Rounds:
+  Each round consists of four transformations:
+  SubBytes:
+    A non-linear substitution step where each byte in the state array is replaced with another byte according to an S-Box.
+    The S-Box is a 16x16 lookup table used to provide non-linearity in the cipher.
+ShiftRows:
+    A transposition step where each row of the state is cyclically shifted a certain number of steps to the left.
+    The first row is unchanged, the second row is shifted by one byte, the third row by two bytes, and the fourth row by three bytes.
+MixColumns:
+    A mixing operation that operates on the columns of the state, combining the four bytes in each column.
+    Each column is multiplied by a fixed polynomial in GF(2^8) and is essential for ensuring diffusion.
+    Note: This step is omitted in the final round.
+AddRoundKey:
+    The state is XORed with a round key derived from the original encryption key.
+    The round keys are generated during the key expansion phase.
+
+4.3 Final Round:
+  The final round consists of only three steps:
+  SubBytes
+  ShiftRows
+  AddRoundKey (No MixColumns)
+
+5. Key Expansion:
+  Purpose: To generate a series of round keys from the original key.
+  Process:
+  The original key undergoes an expansion process to produce a key schedule.
+  Each round key is generated from the previous one using a combination of:
+    RotWord: Rotates the bytes in a word.
+    SubWord: Applies the S-Box substitution to each byte.
+    Rcon: XOR with a round constant derived from the field GF(2^8).
+
+6. AES Decryption:
+    The decryption process reverses the encryption steps using the same round keys in reverse order.
+    The decryption operations are:
+      Inverse ShiftRows
+      Inverse SubBytes (uses the inverse S-Box)
+      AddRoundKey
+      Inverse MixColumns (omitted in the final round)
+
+7. Security Considerations:
+    AES is considered secure against known cryptographic attacks.
+    The number of rounds, key length, and the complexity of the operations (especially SubBytes and MixColumns) provide strong security guarantees.
+
+8. Applications of AES:
+    Widely used in secure communication protocols (e.g., SSL/TLS, VPNs).
+    Implemented in hardware and software for encrypting sensitive data.
+    Used in various standards, including wireless security (WPA2), file encryption, and more.
+
+Conclusion:
+AES is a robust encryption standard that offers strong security through a well-defined structure involving multiple rounds of substitutions, permutations, and key mixing. Its widespread adoption makes it a critical component of modern cryptographic systems.
