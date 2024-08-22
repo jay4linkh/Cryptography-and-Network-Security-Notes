@@ -22,7 +22,7 @@ The lecture notes are structured to cover the following topics:
         - [Structure, Key Generation, Encryption and Decryption](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/DES_Structure%2C%20Key%20Generation%2C%20Encryption%20and%20Decryption)
         - [Tables for Initial, Final Permutations, Expansion P-box, Straight P-box, S-box](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/DES%20Tables)
         - Example - Entire DES Numerical
-        - [S-Box Numerical] (https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/SBox%20Numerical)
+        - [S-Box Numerical](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/SBox%20Numerical)
         - [2-DES](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/2-DES)
         - [Triple DES](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Triple%20DES)
         - [Confusion and Diffusion](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/ConfusionDiffusion)
