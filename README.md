@@ -29,7 +29,7 @@ The lecture notes are structured to cover the following topics:
         - [Avalanche Attack](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Avalanche%20attack)
     - Advanced Encryption Standard (AES)
         - [Algebraic Structures](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Algebraic%20Structures)
-        - AES Structure
+        - [AES Structure](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/AES%20Structure)
         - Round Functions
         - Key Expansion
         - Encryption and Decryption
