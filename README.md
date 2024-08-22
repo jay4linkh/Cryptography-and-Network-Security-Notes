@@ -31,8 +31,7 @@ The lecture notes are structured to cover the following topics:
         - [Algebraic Structures](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Algebraic%20Structures)
         - [AES Structure](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/AES%20Structure)
         - [Round Functions](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Round%20Functions)
-        - Key Expansion
-        - Encryption and Decryption
+          
 ## License
 
 This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 International License. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nd/4.0/](https://creativecommons.org/licenses/by-nd/4.0/).
