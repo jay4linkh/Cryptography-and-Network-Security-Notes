@@ -1,0 +1,67 @@
+In AES (Advanced Encryption Standard), the encryption process is divided into multiple rounds, each comprising a sequence of four core functions. These functions work together to transform the plaintext into ciphertext securely. Here is an overview of the AES round functions:
+
+1. SubBytes
+  Purpose: Introduces non-linearity into the encryption process.
+  Operation:
+    Each byte in the 4x4 state matrix is replaced with a corresponding byte from a fixed 16x16 substitution table known as the S-Box.
+    The S-Box is designed to be resistant to linear and differential cryptanalysis.
+    Example:
+      If a byte in the state matrix is 0x1B, and its S-Box substitution is 0xCD, then 0x1B is replaced with 0xCD.
+
+2. ShiftRows
+    Purpose: Provides diffusion by permuting the data within each row of the state matrix.
+    Operation:
+      The rows of the 4x4 state matrix are shifted to the left by different offsets:
+      Row 0: No shift.
+      Row 1: Shift left by 1 byte.
+      Row 2: Shift left by 2 bytes.
+      Row 3: Shift left by 3 bytes.
+      This ensures that after multiple rounds, the bytes are spread over the state matrix, contributing to diffusion.
+      Example:
+      Before ShiftRows:
+
+        1B 3E 45 92
+        56 89 AF 34
+        7C 2D 63 10
+        48 F1 2A BC
+      After ShiftRows:
+
+        1B 3E 45 92
+        89 AF 34 56
+        63 10 7C 2D
+        BC 48 F1 2A
+
+3. MixColumns
+      Purpose: Ensures that the influence of each byte is spread across all four bytes of its column, contributing to both confusion and diffusion.
+      Operation:
+        Each column of the state matrix is considered a polynomial and multiplied by a fixed matrix in GF(2^8).
+        The fixed matrix is:
+
+          [ 02 03 01 01 ]
+          [ 01 02 03 01 ]
+          [ 01 01 02 03 ]
+          [ 03 01 01 02 ]
+            This step is a linear transformation that mixes the bytes within each column.
+      Example:
+        If the first column of the state matrix before MixColumns is 0x1B, 0x89, 0x63, 0xBC, after MixColumns, the column values will change, but the entire column will contribute         to the transformation.
+4. AddRoundKey
+      Purpose: Integrates the round key with the state to ensure that encryption is dependent on the secret key.
+      Operation:
+        The 128-bit round key, generated during the key expansion phase, is XORed with the current state matrix.
+        This step ensures that the transformation is unique to the given key.
+      Example:
+          If a byte in the state matrix is 0x1B, and the corresponding byte in the round key is 0x73, after the XOR operation, the result will be 0x68 (1B XOR 73 = 68).
+AES Round Structure Overview:
+    Initial Round:
+    AddRoundKey (no other transformations).
+    Main Rounds (Repeated 9, 11, or 13 times depending on key size):
+      SubBytes
+      ShiftRows
+      MixColumns
+      AddRoundKey
+    Final Round:
+      SubBytes
+      ShiftRows
+      AddRoundKey (MixColumns is omitted).
+
+The combination of SubBytes, ShiftRows, MixColumns, and AddRoundKey in each round ensures that AES achieves strong security through confusion and diffusion. These round functions are repeated multiple times, depending on the key length, to fully scramble the plaintext into ciphertext.
