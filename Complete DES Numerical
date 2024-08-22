@@ -1,0 +1,126 @@
+1. Convert Inputs to Binary
+
+Plaintext (Hex to Binary): 02468aceeca86420
+
+Convert each hex digit to 4-bit binary:
+
+0  -> 0000
+2  -> 0010
+4  -> 0100
+6  -> 0110
+8  -> 1000
+a  -> 1010
+c  -> 1100
+e  -> 1110
+e  -> 1110
+c  -> 1100
+a  -> 1010
+8  -> 1000
+6  -> 0110
+4  -> 0100
+2  -> 0010
+0  -> 0000
+
+Binary plaintext: 00000010 00000100 00000110 00001000 00001010 00001100 00001110 00001110 00001100 00001010 00001000 00000110 00000100 00000010 00000000 00000000
+Key (Hex to Binary): 0f1571c947d9e859
+
+Convert each hex digit to a 4-bit binary:
+
+0  -> 0000
+f  -> 1111
+1  -> 0001
+5  -> 0101
+7  -> 0111
+1  -> 0001
+c  -> 1100
+9  -> 1001
+4  -> 0100
+7  -> 0111
+d  -> 1101
+9  -> 1001
+e  -> 1110
+8  -> 1000
+5  -> 0101
+9  -> 1001
+Binary key: 00001111 00010101 01110001 11001100 10010100 01111001 10011111
+
+2. Initial Permutation (IP)
+
+Initial Permutation Table:
+
+Input Bit Position	58	50	42	34	26	18	10	2
+Output Bit Position	1	2	3	4	5	6	7	8
+(Use the full 64-bit IP table. This is an abbreviated table.)
+
+Apply IP:
+
+Rearrange the bits of the plaintext according to the IP table.
+
+3. Key Scheduling
+
+  Key Generation Steps:
+
+  Permuted Choice 1 (PC-1): Reduces the 64-bit key to 56 bits by dropping parity bits.
+  Key Schedule: Generates 48-bit subkeys for each of the 16 rounds.
+
+Example Key Schedule for Round 1:
+
+  Initial Key: 00001111 00010101 01110001 11001100 10010100 01111001 10011111
+  PC-1 Permutation: Apply PC-1 to get 56-bit key.
+  Key Shifts: Apply left shifts to generate round keys.
+
+4. Round Function (F)
+
+The Feistel function involves:
+
+  Expansion (E): Expands the 32-bit half-block to 48 bits.
+  Subkey XOR: XOR the expanded half-block with the 48-bit round subkey.
+  S-Box Substitution: Substitute the result using S-Boxes.
+  Permutation (P): Permute the substituted bits.
+
+For Example:
+
+  Half-block: 00101010 11110000 11111111 00001111 (32 bits)
+  Expansion (E): Expands this to 48 bits.
+  Round Key: Apply XOR with the 48-bit key for the current round.
+
+S-Box Substitution: Substitute the result using S-boxes.
+Permutation (P): Permute the substituted bits.
+
+5. Round 1 Example
+
+Initial Data Split:
+
+  Left Half (L0): First 32 bits of IP output.
+  Right Half (R0): Last 32 bits of IP output.
+  Round Function F:
+    Expand R0 to 48 bits.
+    XOR with round key.
+    Substitute using S-boxes.
+    Permute the substituted result.
+    XOR the result with L0 to get the new R1.
+    Swap L0 and R1 for the next round.
+
+  Final Output after Round 1:
+    Combine new L1 and R1.
+
+Example Numerical Calculation for Round 1
+Plaintext after IP:
+  Let’s assume the result after applying IP is 11001100 10101010 01010101 10011001 11100000 01111111 10011001 10101010.
+Initial Split:
+  L0 = 11001100 10101010 01010101 10011001 (Left 32 bits)
+  R0 = 11100000 01111111 10011001 10101010 (Right 32 bits)
+Round 1 Key:
+  Generated as per the key scheduling.
+Expansion (E) of R0:
+  Example expansion (to 48 bits): 10101010 10000000 11111111 11101110 00101010 11100000.
+XOR with Round Key:
+  Example XOR operation.
+S-Box Substitution:
+  Use S-boxes to substitute the result of XOR operation.
+Permutation (P) of Substituted Output:
+Permute according to P-box.
+  XOR with L0:
+  Compute L1 = R0 and R1 = L0 ⊕ F(R0, K).
+
+This process is repeated for 16 rounds, and then a final permutation (FP) is applied.
