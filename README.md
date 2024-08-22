@@ -26,7 +26,7 @@ The lecture notes are structured to cover the following topics:
         - [2-DES](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/2-DES)
         - Triple DES
         - [Confusion and Diffusion](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/ConfusionDiffusion)
-        - Avalanche Attack
+        - [Avalanche Attack](https://github.com/leenanadkar/Cryptography-and-Network-Security-Notes/blob/main/Avalanche%20attack)
   
 ## License
 
